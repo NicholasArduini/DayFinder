@@ -20,6 +20,24 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet var label: UILabel!
+    @IBOutlet var datePicker: UIDatePicker!
+    
+    @IBAction func onDate(sender: AnyObject) {
+        //date given by date picker
+        let chosenDate = self.datePicker.date
+        //formate date to a complete day name
+        let format = NSDateFormatter()
+        format.dateFormat = "EEEE"
+        let day = format.stringFromDate(chosenDate)
+        //find current date
+        let curDate = NSDate()
+        //label text will act approriatly to the date
+        if(chosenDate.compare(curDate) == NSComparisonResult.OrderedDescending){
+            label.text = "That will be a \(day)"
+        } else if(chosenDate.compare(curDate) == NSComparisonResult.OrderedAscending){
+            label.text = "That was a \(day)"
+        }
+    }
 }
 
