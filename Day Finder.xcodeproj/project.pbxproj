@@ -13,6 +13,7 @@
 		5D1B3B071AFC64F3000FE187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1B3B061AFC64F3000FE187 /* Images.xcassets */; };
 		5D1B3B0A1AFC64F3000FE187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D1B3B081AFC64F3000FE187 /* LaunchScreen.xib */; };
 		5D1B3B161AFC64F3000FE187 /* Day_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B3B151AFC64F3000FE187 /* Day_FinderTests.swift */; };
+		5DC957B31D4271AD00645D09 /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC957B21D4271AD00645D09 /* Default-568h.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		5D1B3B0F1AFC64F3000FE187 /* Day FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1B3B141AFC64F3000FE187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1B3B151AFC64F3000FE187 /* Day_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_FinderTests.swift; sourceTree = "<group>"; };
+		5DC957B21D4271AD00645D09 /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		5D1B3AF11AFC64F3000FE187 = {
 			isa = PBXGroup;
 			children = (
+				5DC957B21D4271AD00645D09 /* Default-568h.png */,
 				5D1B3AFC1AFC64F3000FE187 /* Day Finder */,
 				5D1B3B121AFC64F3000FE187 /* Day FinderTests */,
 				5D1B3AFB1AFC64F3000FE187 /* Products */,
@@ -157,15 +160,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Nicholas Arduini";
 				TargetAttributes = {
 					5D1B3AF91AFC64F3000FE187 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = UDGJ8L64CG;
+						ProvisioningStyle = Automatic;
 					};
 					5D1B3B0E1AFC64F3000FE187 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = UDGJ8L64CG;
 						TestTargetID = 5D1B3AF91AFC64F3000FE187;
 					};
 				};
@@ -194,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC957B31D4271AD00645D09 /* Default-568h.png in Resources */,
 				5D1B3B051AFC64F3000FE187 /* Main.storyboard in Resources */,
 				5D1B3B0A1AFC64F3000FE187 /* LaunchScreen.xib in Resources */,
 				5D1B3B071AFC64F3000FE187 /* Images.xcassets in Resources */,
@@ -279,6 +285,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -346,14 +353,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Nicholas Arduini (UDGJ8L64CG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nicholas Arduini (UDGJ8L64CG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Day Finder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-Finder.Day-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "334da821-ed5d-406d-ac0b-54a74c363be2";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -361,14 +368,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Nicholas Arduini (UDGJ8L64CG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nicholas Arduini (UDGJ8L64CG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Day Finder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-Finder.Day-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "334da821-ed5d-406d-ac0b-54a74c363be2";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -376,6 +383,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -386,7 +395,9 @@
 				);
 				INFOPLIST_FILE = "Day FinderTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholas.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day Finder.app/Day Finder";
 			};
 			name = Debug;
@@ -395,13 +406,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Day FinderTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholas.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day Finder.app/Day Finder";
 			};
 			name = Release;
@@ -449,14 +464,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Nicholas Arduini (UDGJ8L64CG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nicholas Arduini (UDGJ8L64CG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Day Finder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-Finder.Day-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "334da821-ed5d-406d-ac0b-54a74c363be2";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Distribution;
 		};
@@ -464,13 +479,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Day FinderTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholas.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day Finder.app/Day Finder";
 			};
 			name = Distribution;
