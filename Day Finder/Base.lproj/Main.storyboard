@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -20,9 +21,6 @@
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="j3e-rk-0hr">
                                 <rect key="frame" x="0.0" y="403" width="600" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="2Bp-lS-Gyi"/>
-                                </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="452748664.96417499">
                                     <!--2015-05-08 03:31:04 +0000-->
                                 </date>
@@ -30,45 +28,49 @@
                                     <action selector="onDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="SII-x3-IZ6"/>
                                 </connections>
                             </datePicker>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEq-Ph-3C0">
-                                <rect key="frame" x="0.0" y="281" width="600" height="39"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hax-hG-uQ4">
-                                        <rect key="frame" x="159" y="8" width="283" height="22"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="283" id="H8c-vV-kzk"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hax-hG-uQ4">
+                                <rect key="frame" x="0.0" y="278" width="600" height="43"/>
+                                <color key="backgroundColor" red="0.94410854578018188" green="0.2379874587059021" blue="0.2379874587059021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="hax-hG-uQ4" secondAttribute="bottom" constant="9" id="Jox-MM-7N2"/>
-                                    <constraint firstItem="hax-hG-uQ4" firstAttribute="centerX" secondItem="YEq-Ph-3C0" secondAttribute="centerX" id="QHg-N1-xAH"/>
-                                    <constraint firstItem="hax-hG-uQ4" firstAttribute="top" secondItem="YEq-Ph-3C0" secondAttribute="topMargin" id="nWb-sc-XoN"/>
+                                    <constraint firstAttribute="height" constant="43" id="LNV-S4-6Jq"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DID-EQ-P8R">
+                                <rect key="frame" x="20" y="28" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0pt-jg-YQV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.9986064612701544" green="1" blue="0.99633291607551266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="j3e-rk-0hr" firstAttribute="leading" secondItem="YEq-Ph-3C0" secondAttribute="leading" id="0ac-W3-oMH"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j3e-rk-0hr" secondAttribute="bottom" constant="17" id="4iI-is-NVR"/>
-                            <constraint firstItem="j3e-rk-0hr" firstAttribute="trailing" secondItem="YEq-Ph-3C0" secondAttribute="trailing" id="5zo-kW-66i"/>
-                            <constraint firstAttribute="trailing" secondItem="j3e-rk-0hr" secondAttribute="trailing" id="HbV-5Z-r9I"/>
-                            <constraint firstItem="j3e-rk-0hr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bgL-Lh-Pyx"/>
-                            <constraint firstAttribute="centerY" secondItem="YEq-Ph-3C0" secondAttribute="centerY" id="nJh-y1-MUg"/>
+                            <constraint firstItem="hax-hG-uQ4" firstAttribute="centerX" secondItem="DID-EQ-P8R" secondAttribute="centerX" id="2s3-Yb-QB0"/>
+                            <constraint firstItem="hax-hG-uQ4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HKU-qt-OmZ"/>
+                            <constraint firstItem="j3e-rk-0hr" firstAttribute="top" secondItem="hax-hG-uQ4" secondAttribute="bottom" constant="82" id="VIZ-oo-zvI"/>
+                            <constraint firstItem="hax-hG-uQ4" firstAttribute="trailing" secondItem="j3e-rk-0hr" secondAttribute="trailing" id="WrW-uA-8XE"/>
+                            <constraint firstItem="hax-hG-uQ4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yva-0K-gBu"/>
+                            <constraint firstItem="hax-hG-uQ4" firstAttribute="leading" secondItem="j3e-rk-0hr" secondAttribute="leading" id="f8l-4f-0IU"/>
+                            <constraint firstItem="DID-EQ-P8R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="pzA-9u-97g"/>
+                            <constraint firstItem="DID-EQ-P8R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rQb-XJ-hIo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j3e-rk-0hr" secondAttribute="bottom" constant="17" id="w4I-sU-ziF"/>
+                            <constraint firstAttribute="trailing" secondItem="hax-hG-uQ4" secondAttribute="trailing" id="xPx-Ch-gZL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="curDateLabel" destination="DID-EQ-P8R" id="awp-mP-AMB"/>
+                        <outlet property="dateOfTheWeekLabel" destination="hax-hG-uQ4" id="n7g-H5-zLR"/>
                         <outlet property="datePicker" destination="j3e-rk-0hr" id="wjk-SR-alZ"/>
-                        <outlet property="label" destination="hax-hG-uQ4" id="dtj-GB-EPA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="353"/>
+            <point key="canvasLocation" x="542" y="427"/>
         </scene>
     </scenes>
 </document>
